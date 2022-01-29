@@ -11,7 +11,7 @@ st.set_page_config(page_title="Sales Dashboard",
 @st.cache
 def get_data_from_excel():
     df = pd.read_excel(
-        io="supermarkt_sales.xlsx",
+        io="sales_record.xlsx",
         engine="openpyxl",
         sheet_name="Sales",
         skiprows=3,
